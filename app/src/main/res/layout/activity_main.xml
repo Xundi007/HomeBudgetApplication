@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:columnCount="2"
+        app:rowCount="3">
+
+        <Button
+            android:id="@+id/btn_add_spending"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:text="@string/add_spending"
+            android:textAlignment="center"
+            android:textSize="8sp"
+            />
+
+        <Button
+            android:id="@+id/btn_add_income"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:text="@string/add_income"
+            android:textSize="8sp"/>
+
+        <Button
+            android:id="@+id/btn_statistics"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:text="@string/statistics"
+            android:textSize="8sp"/>
+
+        <Button
+            android:id="@+id/btn_categories"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:text="@string/categories"
+            android:textSize="8sp"/>
+
+        <Button
+            android:id="@+id/btn_manage_items"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:text="@string/manage_items"
+            android:textSize="5sp"/>
+
+        <Button
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:text="gridview!6"
+            android:textSize="8sp"/>
+
+    </android.support.v7.widget.GridLayout>
+
+</LinearLayout>
